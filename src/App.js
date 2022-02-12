@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+//components
+
+import Navbar from "./components/navbar";
+
+// const URL = "https://league-of-legends-champions.p.rapidapi.com/champions/en-us";
+// const HOST = "league-of-legends-champions.p.rapidapi.com";
+// const KEY = "53bc56e1b4msh17b7a4633e0ab62p18003fjsn6dc7535110e2";
+// fetch(`${URL}?page=2&size=10`, {"method": "GET", "headers":{"x-rapidapi-host": HOST, "x-rapidapi-key": KEY}}).then(response => {
+//    console.log(response.json());
+// });
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
     </div>
   );
 }
